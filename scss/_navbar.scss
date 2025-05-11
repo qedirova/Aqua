@@ -1,0 +1,41 @@
+.navbar {
+  padding: 30px 0;
+
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-links {
+    display: flex;
+    gap: 50px;
+
+    .navbar-link {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &-btn {
+    padding: 9px 15px;
+    background-color: $primaryColor;
+    border-radius: 3px;
+    border: none;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 860px) {
+  .navbar-links {
+    display: none;
+  }
+}
