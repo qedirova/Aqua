@@ -1,0 +1,67 @@
+.about-ritmstyle {
+  background-color: #0d1d26;
+  padding: 4rem 2rem;
+  color: white;
+
+  &__title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 5px;
+      background-color: #00bcd4;
+      margin: 0 10px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: row-reverse
+    align-items:column ;
+    gap: 23px;
+    margin-bottom: 3rem;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &.reverse {
+      flex-direction: row-reverse;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__text {
+    flex: 1;
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      color: #ddd;
+      line-height: 1.6;
+    }
+  }
+
+  &__image {
+    flex: 1;
+    img {
+      width: 526px;
+      border-radius: 10px;
+      object-fit: cover;
+      height: auto;
+      max-height: 300px;
+    }
+  }
+}
