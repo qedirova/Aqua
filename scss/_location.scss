@@ -1,0 +1,74 @@
+.location {
+  background-color: #0d1d26;
+  padding: 4rem 2rem;
+  color: #ffffff;
+  font-family: sans-serif;
+
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  &__map {
+    flex: 1 1 500px;
+    max-width: 600px;
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    flex: 1 1 300px;
+  }
+
+  &__card {
+    background-color: #0096c7;
+    border-radius: 12px;
+    padding: 1.5rem;
+    color: #fff;
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      margin: 0.5rem 0;
+
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+
+    button {
+      margin-top: 1rem;
+      background-color: #ffffff;
+      color: #0096c7;
+      border: none;
+      padding: 0.5rem 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e6e6e6;
+      }
+    }
+  }
+
+  &__footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin-top: 3rem;
+  }
+}
